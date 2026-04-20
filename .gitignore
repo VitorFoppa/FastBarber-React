@@ -1,0 +1,46 @@
+# =========================
+# Backend (Python / FastAPI)
+# =========================
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Ambientes Virtuais
+venv/
+env/
+.venv/
+
+# Banco de Dados Local
+*.db
+*.sqlite3
+barbearia.db
+
+# =========================
+# Frontend (Node / React / Vite)
+# =========================
+node_modules/
+dist/
+dist-ssr/
+build/
+
+# Logs do Node
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# =========================
+# Variáveis de Ambiente (Segurança)
+# =========================
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# =========================
+# Sistema Operacional e IDEs
+# =========================
+.vscode/
+.DS_Store
+Thumbs.db
