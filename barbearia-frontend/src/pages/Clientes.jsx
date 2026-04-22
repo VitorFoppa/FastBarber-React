@@ -99,18 +99,6 @@ function Clientes() {
                                     />
                                 </div>
 
-                                <div className="space-y-1">
-                                    <label className="text-xs font-bold text-gray-400 uppercase ml-1">Senha</label>
-                                    <input
-                                        type="password"
-                                        placeholder="••••••••"
-                                        value={form.senha}
-                                        onChange={(e) => setForm({ ...form, senha: e.target.value })}
-                                        className="w-full border-gray-200 rounded-xl p-3 bg-gray-50 focus:bg-white focus:ring-2 focus:ring-blue-500 outline-none transition-all border"
-                                        required
-                                    />
-                                </div>
-
                                 <button
                                     type="submit"
                                     className="mt-4 bg-blue-600 hover:bg-blue-700 text-white font-bold py-4 rounded-xl transition-all shadow-lg shadow-blue-100 active:scale-95"

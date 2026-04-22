@@ -3,7 +3,6 @@ from sqlalchemy.orm import Session
 from app.database import SessionLocal
 from app.models.cliente import Cliente
 from app.schemas.cliente import ClienteCreate
-from app.utils.security import hash_senha
 
 router = APIRouter()
 
@@ -20,8 +19,7 @@ def criar_cliente(dados: ClienteCreate, db: Session = Depends(get_db)):
     novo_cliente = Cliente(
         nome=dados.nome,
         email=dados.email,
-        telefone=dados.telefone,
-        senha=hash_senha(dados.senha)
+        telefone=dados.telefone
     )
 
     db.add(novo_cliente)

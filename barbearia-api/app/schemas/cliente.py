@@ -5,7 +5,6 @@ class ClienteCreate(BaseModel):
     nome: str
     email: EmailStr
     telefone: str
-    senha: str
 
 
 class ClienteResponse(BaseModel):

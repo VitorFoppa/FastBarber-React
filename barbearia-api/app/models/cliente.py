@@ -7,5 +7,4 @@ class Cliente(Base):
     id = Column(Integer, primary_key=True)
     nome = Column(String)
     email = Column(String, unique=True)
-    senha = Column(String)
     telefone = Column(String, nullable=False)
